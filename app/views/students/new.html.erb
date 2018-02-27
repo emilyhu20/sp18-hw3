@@ -1,0 +1,17 @@
+<%= form_tag students_path do %>
+  <%= label_tag(:full_name, "Full name") %>
+  <%= text_field_tag(:full_name) %>
+
+  <%= label_tag(:grade_level, "Grade level") %>
+  <%= text_field_tag(:grade_level) %>
+
+  <%= label_tag(:major, "Major") %>
+  <%= text_field_tag(:major) %>
+
+  <%= label_tag(:favorite_color, "Favorite color") %>
+  <%= text_field_tag(:favorite_color) %>
+
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+
+  <%= submit_tag("Create student") %>
+<% end %>

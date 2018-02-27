@@ -1,6 +1,5 @@
-class TeachersController < ApplicationController
+class StudentsController < ApplicationController
   def new
-    @placeholder_course = '186'
   end
 
   def create
@@ -8,8 +7,9 @@ class TeachersController < ApplicationController
 
     # YOUR CODE HERE
     @full_name = params[:full_name]
-    @course = params[:course_name]
+    @major = params[:major]
     @grade_level = params[:grade_level]
+    @favorite_color = params[:favorite_color]
 
 
     # This line is explicitly declaring that this controller method should render/serve the
